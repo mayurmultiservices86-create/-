@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ग्रामपंचायत - गावाचं नाव</title>
+  <style>
+    :root{--brand:#0b5ed7;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',sans-serif;margin:0;color:#111}
+    header{background:linear-gradient(90deg,rgba(11,94,215,0.95),rgba(7,128,255,0.9));color:#fff;padding:18px}
+    .container{max-width:980px;margin:0 auto;padding:18px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-weight:700;font-size:20px}
+    .navlinks{display:flex;gap:12px}
+    .navlinks a{color:inherit;text-decoration:none;padding:8px;border-radius:6px}
+    .navlinks a:hover{background:rgba(255,255,255,0.08)}
+    .hero{display:flex;flex-direction:column;gap:12px;padding:28px 0}
+    .btn{background:var(--brand);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;display:inline-block}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(11,94,215,0.06);padding:14px}
+    .notice{border-left:4px solid var(--brand);padding:10px;margin-bottom:10px;background:#fff}
+    footer{background:#f7f8fb;padding:14px;color:var(--muted);font-size:14px;margin-top:24px}
+    form input,form textarea,form select{width:100%;padding:10px;margin-top:8px;border:1px solid #ddd;border-radius:8px}
+    .mobile-only{display:none}
+    @media (max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .navlinks{display:none}
+      .mobile-only{display:block}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">ग्रामपंचायत - गावाचं नाव</div>
+        <div class="navlinks" id="navlinks">
+          <a href="#about">आमच्या विषयी</a>
+          <a href="#services">सेवा</a>
+          <a href="#notices">सूचना</a>
+          <a href="#members">सदस्य</a>
+          <a href="#contact">संपर्क</a>
+        </div>
+        <div class="mobile-only">
+          <button id="menuBtn" aria-label="menu">मेनू</button>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1 style="margin:0;font-size:28px">आपले ग्रामपंचायत — गावाचं नाव</h1>
+        <p style="margin:0;color:rgba(255,255,255,0.9)">लोकसेवा, सूचना, ग्रामसभा माहिती आणि ऑनलाईन संपर्क साधण्यासाठी येथे भेट द्या.</p>
+        <div style="margin-top:8px">
+          <a class="btn" href="#contact">ऑनलाईन अर्ज / संपर्क</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" style="margin-top:18px" class="card">
+      <h2>आमच्या विषयी</h2>
+      <p>गावाचं संक्षिप्त परिचय येथे लिहा — पत्ता, लोकसंख्या, प्रमुख शेती/उद्योग, प्राथमिक आरोग्य केंद्र, शाळा इत्यादी.</p>
+      <p><strong>उदा.</strong> गावचे नाव: पाटीनगर · तालुका: उदाहरण · जिल्हा: जिल्हानगर</p>
+    </section>
+
+    <section id="services" style="margin-top:18px">
+      <h2>सेवा</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>जमीन व नोंदणी</h3>
+          <p>जमिनीचे दस्तऐवज, नोंदणी सल्ला व अर्ज प्रक्रिया.</p>
+        </div>
+        <div class="card">
+          <h3>अधिकृत प्रमाणपत्र</h3>
+          <p>उपलब्ध: उत्पन्न प्रमाणपत्र, राहणीचं प्रमाणपत्र, इतर प्रमाणपत्र.</p>
+        </div>
+        <div class="card">
+          <h3>पाणी व साफसफाई</h3>
+          <p>पाणी योजना, स्वच्छता व कचरा व्यवस्थापन माहिती.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="notices" style="margin-top:18px" class="card">
+      <h2>सूचना / सार्वजनिक अधिसूचना</h2>
+      <div class="notice"><strong>27 नोव्हेंबर 2025:</strong> ग्रामसभा बैठक सकाळी 11:00 वाजता शाळेत. सर्व ग्रामस्थ उपस्थित राहावेत.</div>
+      <div class="notice"><strong>10 नोव्हेंबर 2025:</strong> पाणी पुरवठा बंद राहील (सकाळी 8-12). तातडीची दुरुस्तीचे काम सुरू आहे.</div>
+      <div class="notice"><strong>1 ऑक्टोबर 2025:</strong> नवीन आरोग्य शिबिर - मोफत तपासणी आणि लस.</div>
+      <p>सूचना अपडेट करण्यासाठी प्रशासकीय खाते वापरा.</p>
+    </section>
+
+    <section id="members" style="margin-top:18px" class="card">
+      <h2>पंचायत सदस्य</h2>
+      <ul>
+        <li><strong>सरपंच:</strong> श्री. नाव</li>
+        <li><strong>उपसरपंच:</strong> श्री. नाव</li>
+        <li><strong>पंच सदस्य:</strong> नाव 1, नाव 2, नाव 3</li>
+      </ul>
+    </section>
+
+    <section id="contact" style="margin-top:18px" class="card">
+      <h2>संपर्क आणि ऑनलाईन अर्ज</h2>
+      <p>पत्ता: गाव रोड, तालुका - जिल्हानगर<br>ई-मेल: <a href="mailto:example@grampanchayat.org">example@grampanchayat.org</a> · दूरध्वनी: 01234-567890</p>
+
+      <h3>संपर्क फॉर्म</h3>
+      <form id="contactForm" onsubmit="submitForm(event)">
+        <label>नाव<input type="text" id="name" required placeholder="तुमचं नाव"></label>
+        <label>ईमेल किंवा फोन<input type="text" id="contactinfo" required placeholder="ईमेल किंवा फोन"></label>
+        <label>विषय<select id="subject"><option>सामान्य चौकशी</option><option>आरोग्य सेवा</option><option>पाणी समस्या</option><option>इतर</option></select></label>
+        <label>संदेश<textarea id="message" rows="4" placeholder="तुमचा संदेश"></textarea></label>
+        <div style="margin-top:8px"><button class="btn" type="submit">पाठवा</button></div>
+      </form>
+      <p id="formMsg" style="color:green;display:none;margin-top:8px">आपला संदेश पाठवला गेला. आमच्याकडून लवकर संपर्क केला जाईल.</p>
+    </section>
+
+    <section style="margin-top:18px" class="card">
+      <h2>महत्वाच्या फाइल्स</h2>
+      <p>येथे PDF / फॉर्म / निकाल इत्यादीचे दुवे टाका. (उदा. गाव विकास आराखडा, बैठकीचे मिनिट्स)</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> ग्रामपंचायत - गावाचं नाव · सर्व हक्क राखीव
+    </div>
+  </footer>
+
+  <script>
+    // Basic interactivity: mobile menu + form handling
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menuBtn');
+    const navlinks = document.getElementById('navlinks');
+    if(menuBtn){
+      menuBtn.addEventListener('click', ()=>{
+        if(navlinks.style.display === 'flex') navlinks.style.display = 'none';
+        else navlinks.style.display = 'flex';
+      });
+    }
+
+    function submitForm(e){
+      e.preventDefault();
+      // Simple demo - replace with server endpoint or Formspree/Netlify forms
+      const name = document.getElementById('name').value;
+      const contact = document.getElementById('contactinfo').value;
+      const subj = document.getElementById('subject').value;
+      const msg = document.getElementById('message').value;
+      console.log('Contact form', {name,contact,subj,msg});
+      document.getElementById('contactForm').reset();
+      document.getElementById('formMsg').style.display = 'block';
+      setTimeout(()=>document.getElementById('formMsg').style.display='none',4000);
+    }
+  </script>
+</body>
+</html>
